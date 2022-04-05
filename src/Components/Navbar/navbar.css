@@ -1,0 +1,21 @@
+@import url('../../global.css');
+
+.btn-primary-solid {
+    background-color: var(--primary-title-color);
+}
+
+.nav-align {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.line-height-extra {
+    letter-spacing: 0.4rem;
+}
+
+.btn-icon-singular {
+    margin-left: 4rem;
+}

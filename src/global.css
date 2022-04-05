@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+:root{
+    --primary-title-color:  #fe3b34;
+    --red-color: red;
+}
+
+h1, h2{
+    color: var(--primary-title-color)
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--white-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-title-color);
+  }
+  .underline{
+      border-bottom: 3px solid var(--grid-odd-color);
+  }
+  .red-color{
+    color: var(--red-color);
+  }
+ 
