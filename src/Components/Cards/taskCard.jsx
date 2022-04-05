@@ -4,6 +4,7 @@ import { useTask } from "../../Context/taskContext";
 import { DeleteTodo } from "../helperFunctions/deleteTodo";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../Context/themeContext";
+import { useEffect } from "react";
 const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
   const { task, setTask } = useTask();
   const {theme} = useTheme();
@@ -11,6 +12,8 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
     setTaskDetails(items);
     setShowModal(true);
   };
+  localStorage.setItem('task', JSON.stringify(task));
+  localStorage.setItem('theme', JSON.stringify(theme));
   return (
     <>
       <div class="all-card-collection">

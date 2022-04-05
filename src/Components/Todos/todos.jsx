@@ -3,14 +3,14 @@ import { useTask } from "../../Context/taskContext";
 import TaskCard from "../Cards/taskCard";
 import { CreateTask } from "../Modals/createTask";
 import "../Todos/todos.css";
-import emptyTodo from "../../Assets/empty-todo.png";
+import emptyTodo from "../../Assets/empty-todo1.png";
 import darkEmptyTodo from "../../Assets/dark-empty-todo.png";
 import { useTheme } from "../../Context/themeContext";
 const TodoList = () => {
   const [showModal, setShowModal] = useState(false);
   const [taskDetails, setTaskDetails] = useState();
   const { task } = useTask();
-  const {theme} = useTheme
+  const {theme} = useTheme();
   return (
   <div>
       <div className="task-append">
@@ -66,7 +66,7 @@ const TodoList = () => {
             src={emptyTodo}
             alt="empty-task"
             className="res-img-hero empty-task-list"
-          /> :<img
+          /> : <img
           src={darkEmptyTodo}
           alt="empty-task"
           className="res-img-hero empty-task-list"
