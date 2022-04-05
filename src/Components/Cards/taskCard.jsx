@@ -2,6 +2,7 @@ import "../Cards/taskCard.css";
 import { colors } from "./cardColor";
 import { useTask } from "../../Context/taskContext";
 import { DeleteTodo } from "../helperFunctions/deleteTodo";
+import { Link } from "react-router-dom";
 const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
   const { task, setTask } = useTask();
   const editAction = () => {
@@ -37,7 +38,13 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
           <main class="main-body">
             <p>Don't miss this, Procastination is bad!</p>
           </main>
+
           <footer class="footer-card">
+            <Link to="/pomodoro-task" state={{ items }}>
+              <button class="btn-primary-card">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </Link>
             <button
               class="btn-primary-card green-text"
               style={{
@@ -50,7 +57,10 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
             >
               <i class="fa-solid fa-pen-to-square"></i>
             </button>
-            <button class="btn-primary-card red-color" onClick={()=> DeleteTodo(task, setTask, items.taskId )}>
+            <button
+              class="btn-primary-card red-color"
+              onClick={() => DeleteTodo(task, setTask, items.taskId)}
+            >
               <i class="fa-solid fa-trash"></i>
             </button>
           </footer>

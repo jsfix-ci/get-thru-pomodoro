@@ -10,10 +10,14 @@
 }
 
 .footer-card {
-    justify-content: flex-end;
+    justify-content: space-between;
 
 }
 
 .footer-card>button {
     font-size: 1.5rem;
+}
+
+.font-size-1rem {
+    font-size: 1rem;
 }

@@ -1,13 +1,16 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
       <div className="nav-align">
-        <h1 className="line-height-extra">
-          <i class="fa-solid fa-clipboard-check"></i> GetThru
-        </h1>
+        <Link to="/">
+          <h1 className="line-height-extra">
+            <i class="fa-solid fa-clipboard-check"></i> GetThru
+          </h1>
+        </Link>
         <div className="btn-toggle">
           <a className="btn-com btn-primary-solid">
             <i class="fa-brands fa-github"></i> GitHub

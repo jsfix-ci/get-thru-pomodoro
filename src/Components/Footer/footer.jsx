@@ -2,7 +2,7 @@ const Footer = () => {
     return (
       <>
         <div class="footer-basic" style={{ backgroundColor: "#b3cccc" }}>
-          <footer>
+          <footer style={{marginTop:'1rem'}}>
             <p class="signature">
               {" "}
               Made with <i class="fas fa-code"></i> by Rohan Dubey{" "}

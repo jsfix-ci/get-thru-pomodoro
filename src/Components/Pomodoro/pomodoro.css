@@ -1,0 +1,35 @@
+@import url("../../global.css");
+
+.wrap-timer-buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    margin: 3rem 10rem;
+    align-items: center;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: var(--primary-title-color);
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+    fill: var(--primary-color);
+}
+
+.task-timer-warp {
+    display: flex;
+}
+
+.title-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 10rem;
+}
+
+.bruh-img {
+    max-width: 10rem;
+}
+
+.font-size-p {
+    font-size: 1.2rem;
+}
