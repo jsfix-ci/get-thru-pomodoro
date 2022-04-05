@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../Context/themeContext";
 import "./navbar.css";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const {theme, themeToggle} = useTheme();
   return (
     <>
       <div className="nav-align">
@@ -18,10 +19,10 @@ const Navbar = () => {
 
           <button
             class="btn-com btn-icon-singular"
-            onClick={() => setToggle((toggle) => !toggle)}
+            onClick={themeToggle}
           >
             <span className="btn-icon">
-              {!toggle ? (
+              {theme === 'light' ? (
                 <i class="fa-solid fa-moon"></i>
               ) : (
                 <i class="fa-solid fa-sun"></i>

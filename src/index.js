@@ -4,13 +4,16 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import { TaskProvider } from "./Context/taskContext";
+import { ThemeProvider } from "./Context/themeContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ThemeProvider>
       <TaskProvider>
         <App />
       </TaskProvider>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

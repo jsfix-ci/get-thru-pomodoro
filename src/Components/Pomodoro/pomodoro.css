@@ -16,20 +16,45 @@
     fill: var(--primary-color);
 }
 
-.task-timer-warp {
+.task-timer-wrap {
     display: flex;
 }
 
 .title-description {
     display: flex;
     flex-direction: column;
-    margin: 0rem 10rem;
+    margin: 2rem 5rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .bruh-img {
-    max-width: 10rem;
+    width: 10rem;
 }
 
 .font-size-p {
     font-size: 1.2rem;
+}
+.two-btn{
+    display: flex;
+}
+
+@media screen and (max-width: 776px) {
+    .task-timer-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+@media screen and (max-width: 508px){
+    .title-description{
+        margin: 2rem 1rem;
+    }
+    .btn-com{
+        padding: .4rem;
+    }
+    .wrap-timer-buttons{
+        gap: 1rem;
+        margin: 3rem 4rem;
+    }
 }

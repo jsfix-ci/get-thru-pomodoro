@@ -1,8 +1,11 @@
 import heroImg from "../../Assets/hero-img.jpg";
+import darkHeroImg from "../../Assets/dark-home-img.png";
 import ashneerMeme from "../../Assets/ashneer-meme.jpg";
 import "../HomeBody/homeBody.css";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../Context/themeContext";
 const Body = () => {
+  const {theme} = useTheme();
   return (
     <>
       <div className="wrap-side-content">
@@ -34,11 +37,15 @@ const Body = () => {
         </div>
 
         <div>
-          <img
+          { theme === 'light' ? <img
             src={heroImg}
             alt="main-head-img"
             className="res-img-hero res-img-main"
-          />
+          /> : <img
+          src={darkHeroImg}
+          alt="main-head-img"
+          className="res-img-hero res-img-main" />}
+          
         </div>
       </div>
     </>
