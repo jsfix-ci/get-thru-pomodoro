@@ -3,8 +3,10 @@ import { colors } from "./cardColor";
 import { useTask } from "../../Context/taskContext";
 import { DeleteTodo } from "../helperFunctions/deleteTodo";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../Context/themeContext";
 const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
   const { task, setTask } = useTask();
+  const {theme} = useTheme();
   const editAction = () => {
     setTaskDetails(items);
     setShowModal(true);
@@ -25,18 +27,18 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
             <h3
               class="card-title"
               style={{
-                color:
+                color: theme === 'light' ? 
                   colors[
                     ((Math.floor(Math.random() * (100 - 1 + 1)) + 1) % 5) % 5
-                  ].secondaryColor,
+                  ].secondaryColor : '#000'
               }}
             >
               {items.title}
             </h3>
-            <p>{items.description}</p>
+            <p style={{color: '#000'}}>{items.description}</p>
           </main>
           <main class="main-body">
-            <p>Don't miss this, Procastination is bad!</p>
+            <p style={{color: '#000'}}>Don't miss this, Procastination is bad!</p>
           </main>
 
           <footer class="footer-card">
