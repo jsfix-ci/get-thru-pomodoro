@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTask } from "../../Context/taskContext";
 import { addTodo } from "../helperFunctions/addTodo";
+import { EditTodo } from "../helperFunctions/editTodo";
 import "../Modals/createTask.css";
 const CreateTask = ({
   taskDetails,
@@ -85,15 +86,15 @@ const CreateTask = ({
             </button>
           ) : (
             <button
-            //   onClick={() =>
-            //     EditTodo({
-            //       taskId: taskDetails.taskId,
-            //       appendTask,
-            //       setTask,
-            //       task,
-            //       resetInputField,
-            //     })
-            //   }
+              onClick={() =>
+                EditTodo({
+                  taskId: taskDetails.taskId,
+                  appendTask,
+                  setTask,
+                  task,
+                  resetInputField,
+                })
+              }
             >
               {" "}
               Update{" "}
