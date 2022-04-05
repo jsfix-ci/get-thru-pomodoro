@@ -1,6 +1,7 @@
 import "../Cards/taskCard.css";
 import { colors } from "./cardColor";
 import { useTask } from "../../Context/taskContext";
+import { DeleteTodo } from "../helperFunctions/deleteTodo";
 const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
   const { task, setTask } = useTask();
   const editAction = () => {
@@ -49,7 +50,7 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
             >
               <i class="fa-solid fa-pen-to-square"></i>
             </button>
-            <button class="btn-primary-card red-color">
+            <button class="btn-primary-card red-color" onClick={()=> DeleteTodo(task, setTask, items.taskId )}>
               <i class="fa-solid fa-trash"></i>
             </button>
           </footer>
