@@ -1,0 +1,57 @@
+.task-append {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.form-submit {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 20rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.input-task {
+    width: 100%;
+    outline: 0;
+    border-width: 0 0 2px;
+    padding: 0.4rem;
+}
+
+.input-task:focus {
+    border-width: 1px 1px 2px;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+
+button {
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: burlywood;
+}
+
+.textarea-des {
+    width: 18rem;
+    height: 7rem;
+}
+
+.taskCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 5rem;
+}
