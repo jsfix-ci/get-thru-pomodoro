@@ -48,7 +48,7 @@ const Pomodoro = () => {
               }}
             >
               {" "}
-              <i class="fa-solid fa-play"></i> Start
+              <i className="fa-solid fa-play"></i> Start
             </button> : <button
               className="btn-com btn-primary-solid"
               onClick={() => {
@@ -56,7 +56,7 @@ const Pomodoro = () => {
               }}
             >
               {" "}
-              <i class="fa-solid fa-play"></i> Start
+              <i className="fa-solid fa-play"></i> Start
             </button>}
             <button
               className="btn-com btn-primary-solid"
@@ -64,7 +64,7 @@ const Pomodoro = () => {
                 pauseTimerBtn(timeId);
               }}
             >
-              <i class="fa-solid fa-pause"></i> Pause
+              <i className="fa-solid fa-pause"></i> Pause
             </button>
           </div>
           {theme === 'light' ? <button

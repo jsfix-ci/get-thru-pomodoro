@@ -1,6 +1,6 @@
 import { Navbar } from "./Components/Navbar/navbar";
 import { HomePage } from "./Routes/homePage";
-import { HashRouter as Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { TodoList } from "./Components/Todos/todos";
 import Pomodoro from "./Components/Pomodoro/pomodoro";
 import { Footer } from "./Components/Footer/footer";

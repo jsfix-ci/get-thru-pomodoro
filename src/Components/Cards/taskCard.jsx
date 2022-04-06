@@ -15,8 +15,8 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
   localStorage.setItem('theme', JSON.stringify(theme));
   return (
     <>
-      <div class="all-card-collection">
-        <div class="card-container">
+      <div className="all-card-collection">
+        <div className="card-container">
           <div
             style={{
               backgroundColor:
@@ -25,9 +25,9 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
               height: "8px",
             }}
           ></div>
-          <main class="main-body">
+          <main className="main-body">
             <h3
-              class="card-title"
+              className="card-title"
               style={{
                 color: theme === 'light' ? 
                   colors[
@@ -39,18 +39,18 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
             </h3>
             <p style={{color: '#000'}}>{items.description}</p>
           </main>
-          <main class="main-body">
+          <main className="main-body">
             <p style={{color: '#000'}}>Don't miss this, Procastination is bad!</p>
           </main>
 
-          <footer class="footer-card">
+          <footer className="footer-card">
             <Link to="/pomodoro-task" state={{ items }}>
-              <button class="btn-primary-card">
-                <i class="fa-solid fa-angle-right"></i>
+              <button className="btn-primary-card">
+                <i className="fa-solid fa-angle-right"></i>
               </button>
             </Link>
             <button
-              class="btn-primary-card green-text"
+              className="btn-primary-card green-text"
               style={{
                 color:
                   colors[
@@ -59,13 +59,13 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
               }}
               onClick={() => editAction(items, setTaskDetails, setShowModal)}
             >
-              <i class="fa-solid fa-pen-to-square"></i>
+              <i className="fa-solid fa-pen-to-square"></i>
             </button>
             <button
-              class="btn-primary-card red-color"
+              className="btn-primary-card red-color"
               onClick={() => DeleteTodo(task, setTask, items.taskId)}
             >
-              <i class="fa-solid fa-trash"></i>
+              <i className="fa-solid fa-trash"></i>
             </button>
           </footer>
         </div>

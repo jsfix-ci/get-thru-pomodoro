@@ -21,7 +21,7 @@ const Body = () => {
             <span className="underline">map your tasks</span> and adopt
             <span className="underline"> POMODORO technique </span>.
           </h2>
-          <h3 clasName="h3-tags">
+          <h3 className="h3-tags">
             {" "}
             <strong className="underline">GetThru</strong> is a one stop todo or
             pomodoro app to complete you daily tasks and help you to adopt new

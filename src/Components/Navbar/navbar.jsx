@@ -8,23 +8,23 @@ const Navbar = () => {
       <div className="nav-align">
         <Link to="/">
           <h1 className="line-height-extra">
-            <i class="fa-solid fa-clipboard-check"></i> GetThru
+            <i className="fa-solid fa-clipboard-check"></i> GetThru
           </h1>
         </Link>
         <div className="btn-toggle">
           <a href='https://github.com/Rohan-154/get-thru-pomodoro' className="btn-com btn-primary-solid">
-            <i class="fa-brands fa-github"></i> GitHub
+            <i className="fa-brands fa-github"></i> GitHub
           </a>
 
           <button
-            class="btn-com btn-icon-singular"
+            className="btn-com btn-icon-singular"
             onClick={themeToggle}
           >
             <span className="btn-icon">
               {theme === 'light' ? (
-                <i class="fa-solid fa-moon"></i>
+                <i className="fa-solid fa-moon"></i>
               ) : (
-                <i class="fa-solid fa-sun"></i>
+                <i className="fa-solid fa-sun"></i>
               )}
             </span>
           </button>
