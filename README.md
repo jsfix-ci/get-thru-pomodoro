@@ -1,6 +1,6 @@
 <div align-text="center">
 
-<img src="/src/Assets/ashneer-meme.jpg" alt="readme-logo" width="250px" height="250px" />
+<img src="/src/Assets/ashneer-meme.jpg" alt="readme-logo" width="350px" height="250px" />
   
 # Get-Thru
 
