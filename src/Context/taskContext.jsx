@@ -1,7 +1,7 @@
-const { createContext, useContext, useState } = require("react");
+const { createContext, useContext, useState, useEffect } = require("react");
 
 const TaskProvider = ({ children }) => {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(JSON.parse(localStorage.getItem('task')) || []);
   return (
     <TaskContext.Provider value={{ task, setTask }}>
       {children}

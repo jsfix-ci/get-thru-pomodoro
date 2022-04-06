@@ -12,7 +12,7 @@ import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "../Pomodoro/pomodoro.css";
 import { useTheme } from "../../Context/themeContext";
-
+import { Helmet } from 'react-helmet';
 const Pomodoro = () => {
   const location = useLocation();
   const { items } = location.state;
@@ -36,7 +36,6 @@ const Pomodoro = () => {
               textSize: "0.8rem",
             })}
           />
-
           <div className="two-btn">
             { theme === 'light' ? <button
               className="btn-com btn-primary-outline"

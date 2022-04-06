@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTask } from "../../Context/taskContext";
 import { addTodo } from "../helperFunctions/addTodo";
 import { EditTodo } from "../helperFunctions/editTodo";
@@ -9,6 +9,7 @@ const CreateTask = ({
   setShowModal,
   showModal,
 }) => {
+
   const resetInputField = () => {
     setShowModal(false);
     setAppendTask(initialDetails);
