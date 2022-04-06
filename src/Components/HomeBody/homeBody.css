@@ -9,13 +9,14 @@
     margin: 5rem auto;
     align-items: stretch;
     gap: 1.5rem;
-    max-width: 35vw;
+    width: 50vw;
 }
 
 .wrap-side-content {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .res-img-hero {
@@ -24,8 +25,8 @@
     border-radius: 1rem;
 }
 .res-img-main{
-    min-width: 50rem;
     object-fit: contain;
+    width: 45vw;
 }
 .h3-tags{
     font-size: x-large;
@@ -40,4 +41,20 @@
 .btn-primary-outline:hover{
     background-color: var(--primary-title-color);
 
+}
+@media screen and (max-width:768px) {
+
+  .res-img-main{
+      display: none;
+  }
+  .caption-main{
+   width: 100%;
+   margin: 0.9rem;
+  }  
+  .caption-main> h2{
+      font-size: 1.5rem;
+  }
+  .caption-main> h3{
+      font-size: 1.3rem;
+  }
 }
