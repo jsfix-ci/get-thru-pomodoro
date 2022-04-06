@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTask } from "../../Context/taskContext";
 import TaskCard from "../Cards/taskCard";
 import { CreateTask } from "../Modals/createTask";

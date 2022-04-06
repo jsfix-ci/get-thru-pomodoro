@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTask } from "../../Context/taskContext";
 import { addTodo } from "../helperFunctions/addTodo";
 import { EditTodo } from "../helperFunctions/editTodo";

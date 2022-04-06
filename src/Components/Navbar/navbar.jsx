@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../Context/themeContext";
 import "./navbar.css";
@@ -13,7 +12,7 @@ const Navbar = () => {
           </h1>
         </Link>
         <div className="btn-toggle">
-          <a className="btn-com btn-primary-solid">
+          <a href='https://github.com/Rohan-154/get-thru-pomodoro' className="btn-com btn-primary-solid">
             <i class="fa-brands fa-github"></i> GitHub
           </a>
 

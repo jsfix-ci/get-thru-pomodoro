@@ -20,6 +20,7 @@ const Pomodoro = () => {
   const [continuous, setContinuous] = useState(0);
   if (continuous > items.time * 60) resetTimerBtn(timeId, setContinuous);
   const {theme} = useTheme();
+  const TitleClock = secondConversion(items.time * 60 - continuous);
   return (
     <>
       <div className="task-timer-wrap" style={{
@@ -36,6 +37,9 @@ const Pomodoro = () => {
               textSize: "0.8rem",
             })}
           />
+          <Helmet>
+          <title>  { TitleClock } 👨‍💻 | GetThru</title>
+        </Helmet>
           <div className="two-btn">
             { theme === 'light' ? <button
               className="btn-com btn-primary-outline"
