@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import App from "./App";
 import { TaskProvider } from "./Context/taskContext";
@@ -8,13 +8,13 @@ import { ThemeProvider } from "./Context/themeContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <ThemeProvider>
       <TaskProvider>
         <App />
       </TaskProvider>
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
