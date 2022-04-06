@@ -12,7 +12,6 @@ const TaskCard = ({ items, setTaskDetails, setShowModal, showModal }) => {
     setShowModal(true);
   };
   localStorage.setItem('task', JSON.stringify(task));
-  localStorage.setItem('theme', JSON.stringify(theme));
   return (
     <>
       <div className="all-card-collection">

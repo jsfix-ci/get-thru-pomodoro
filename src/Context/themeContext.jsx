@@ -5,6 +5,7 @@ const ThemeProvider = ({ children }) => {
     const themeToggle= ()=>{
         setTheme((theme)=> theme === 'light' ? 'dark' : 'light')
     }
+    localStorage.setItem('theme', JSON.stringify(theme));
   return <ThemeContext.Provider value={{theme,themeToggle}}> {children}</ThemeContext.Provider>;
 };
 
