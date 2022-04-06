@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+<div align-text="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="/src/Assets/ashneer-meme.jpg" alt="readme-logo" width="250px" height="250px" />
+  
+# Get-Thru
 
-## Available Scripts
+### Be focused , map your tasks and adopt POMODORO technique.
 
-In the project directory, you can run:
+GetThru is a one stop todo or pomodoro app to complete you daily tasks and help you to adopt new and good habits.
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Deployment
 
-### `npm test`
+Checkout the live website : [Get-Thru](https://get-thru-pomodoro-154.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## What to expect?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tough times don't last but tough people do. You would get-thru from every difficulties of your life. Yes, as the name of the web app made with love by [Me](https://twitter.com/Rohan_415) suggests, you would get-thru your daily tasks easily with the help of <b> POMODORO </b> technique used in the app. Add a task, set the focus mode and you are good to go.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What features does it include?
 
-### `npm run eject`
+Be ready to amazed if not features then by hard-work.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. The most important motivation needed is given by our shark Ashneer when you open the web app.
+2. You could toggle between dark and light mode making sure you don't harm your eyes and are at top of your game.
+3. CRUD Operations : Create a task, Read it, Update/ Edit it, Delete when completed.
+4. Last but not least, <b> POMODORO TIMER </b> to track your time and be focused. Start, pause and reset timer at your will.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to use it?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<ul>
+<li>Step 1: Visit the website <a href="https://get-thru-pomodoro-154.netlify.app//">here</a></li>
+<li>Step 2: Click on Get,Set and Go CTA button to go to tasks page. </li>
+<li>Step 3: Create Task, Set ypur focus mode and you are good to go. </li>
+<li>Step 4: Click the arrow button on task card to go to pomodoro timer page and click start.</li>
+<li>Step 5: Pause,Reset and start again as per your will.</li>
+</ul>
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Website Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![stint demo gif](/src/assets/gif/preview.gif)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### More features are coming soon..
