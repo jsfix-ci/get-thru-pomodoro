@@ -1,6 +1,6 @@
 <div align-text="center">
 
-<img src="/src/Assets/ashneer-meme.jpg" alt="readme-logo" width="250px" height="250px" />
+<img src="/src/Assets/ashneer-meme.jpg" alt="readme-logo" width="350px" height="250px" />
   
 # Get-Thru
 
@@ -49,6 +49,6 @@ Be ready to amazed if not features then by hard-work.
 
 ## Website Demo
 
-![stint demo gif](/src/assets/gif/preview.gif)
+![stint demo gif](/src/Assets/preview-gif.gif)
 
 ### More features are coming soon..
