@@ -49,6 +49,6 @@ Be ready to amazed if not features then by hard-work.
 
 ## Website Demo
 
-![stint demo gif](/src/Assets/preview-gif.gif)
+![stint demo gif](/src/assets/gif/preview.gif)
 
 ### More features are coming soon..
